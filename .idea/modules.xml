@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/components/api/Squares.core.components.api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/components/api/Squares.core.components.api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/components/impl/Squares.core.components.impl.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/core/components/impl/Squares.core.components.impl.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gradle/conventions/conventions.main.iml" filepath="$PROJECT_DIR$/.idea/modules/gradle/conventions/conventions.main.iml" />
     </modules>
   </component>

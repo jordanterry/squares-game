@@ -4,11 +4,11 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import uk.co.jordanterry.squares.components.models.Component
+import uk.co.jordanterry.core.components.Component
 
 @Composable
 fun DsText(
-    text: Component.Text.Small,
+    text: uk.co.jordanterry.core.components.Component.Text.Small,
     modifier: Modifier = Modifier,
 ) {
     Text(
@@ -19,7 +19,7 @@ fun DsText(
 
 @Composable
 fun DsText(
-    text: Component.Text.Medium,
+    text: uk.co.jordanterry.core.components.Component.Text.Medium,
     modifier: Modifier = Modifier,
 ) {
     Text(
@@ -30,7 +30,7 @@ fun DsText(
 
 @Composable
 fun DsText(
-    text: Component.Text.Large,
+    text: uk.co.jordanterry.core.components.Component.Text.Large,
     modifier: Modifier = Modifier,
 ) {
     Text(
@@ -41,7 +41,7 @@ fun DsText(
 
 @Composable
 fun DsButton(
-    button: Component.Button.Small,
+    button: uk.co.jordanterry.core.components.Component.Button.Small,
     modifier: Modifier = Modifier,
 ) {
     Button(
@@ -52,7 +52,7 @@ fun DsButton(
 
 @Composable
 fun DsButton(
-    button: Component.Button.Medium,
+    button: uk.co.jordanterry.core.components.Component.Button.Medium,
     modifier: Modifier = Modifier,
 ) {
     Button(
@@ -63,7 +63,7 @@ fun DsButton(
 
 @Composable
 fun DsButton(
-    button: Component.Button.Large,
+    button: uk.co.jordanterry.core.components.Component.Button.Large,
     modifier: Modifier = Modifier,
 ) {
     Button(

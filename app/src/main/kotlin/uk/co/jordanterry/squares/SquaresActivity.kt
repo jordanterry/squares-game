@@ -10,6 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import dagger.hilt.android.AndroidEntryPoint
+import uk.co.jordanterry.core.components.Screen
 import uk.co.jordanterry.squares.components.ComponentScreen
 import uk.co.jordanterry.squares.components.ComponentViewModel
 import uk.co.jordanterry.squares.ui.theme.SquaresTheme

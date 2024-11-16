@@ -10,9 +10,8 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
-import uk.co.jordanterry.squares.Screen
-import uk.co.jordanterry.squares.components.models.Component
-import uk.co.jordanterry.squares.components.models.Layout
+import uk.co.jordanterry.core.components.ComponentRepository
+import uk.co.jordanterry.core.components.Screen
 import javax.inject.Inject
 
 @HiltViewModel
@@ -22,14 +21,15 @@ class ComponentViewModel @Inject constructor(
 ) : ViewModel() {
     private val screen = savedStateHandle.toRoute<Screen>()
 
-    private val loading: Layout = Layout.SingleColumnList(
-        components = listOf(
-            Component.Text.Small("Loading..."),
+    private val loading: uk.co.jordanterry.core.components.Layout =
+        uk.co.jordanterry.core.components.Layout.SingleColumnList(
+            components = listOf(
+                uk.co.jordanterry.core.components.Component.Text.Small("Loading..."),
+            )
         )
-    )
-    private val _layout: Flow<Layout> = flow {
+    private val _layout: Flow<uk.co.jordanterry.core.components.Layout> = flow {
         emit(componentRepository.get(screen))
     }
-    val state: StateFlow<Layout> = _layout
+    val state: StateFlow<uk.co.jordanterry.core.components.Layout> = _layout
         .stateIn(viewModelScope, SharingStarted.Eagerly, loading)
 }

@@ -12,13 +12,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import uk.co.jordanterry.squares.components.models.Component
-import uk.co.jordanterry.squares.components.models.Layout
+import uk.co.jordanterry.core.components.Component
+import uk.co.jordanterry.core.components.Layout
 
 
 @Composable
 fun SingleColumnListScreen(
-    layout: Layout.SingleColumnList,
+    layout: uk.co.jordanterry.core.components.Layout.SingleColumnList,
     modifier: Modifier = Modifier,
 ) {
     Scaffold(modifier = modifier.fillMaxSize()) { innerPadding ->
@@ -48,31 +48,31 @@ fun SingleColumnListScreen(
 }
 
 @Composable
-fun Component(component: Component) {
+fun Component(component: uk.co.jordanterry.core.components.Component) {
     when (component) {
-        is Component.Button.Large -> DsButton(
+        is uk.co.jordanterry.core.components.Component.Button.Large -> DsButton(
             button = component,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
         )
 
-        is Component.Button.Medium -> DsButton(
+        is uk.co.jordanterry.core.components.Component.Button.Medium -> DsButton(
             button = component,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
         )
 
-        is Component.Button.Small -> DsButton(
+        is uk.co.jordanterry.core.components.Component.Button.Small -> DsButton(
             button = component,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
         )
 
-        is Component.Text.Large -> DsText(text = component)
-        is Component.Text.Medium -> DsText(text = component)
-        is Component.Text.Small -> DsText(text = component)
+        is uk.co.jordanterry.core.components.Component.Text.Large -> DsText(text = component)
+        is uk.co.jordanterry.core.components.Component.Text.Medium -> DsText(text = component)
+        is uk.co.jordanterry.core.components.Component.Text.Small -> DsText(text = component)
     }
 }

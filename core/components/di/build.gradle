@@ -5,3 +5,8 @@ plugins {
 android {
     namespace 'uk.co.jordanterry.squares.core.components.di'
 }
+
+dependencies {
+    api project(":core:components:api")
+    api project(":core:components:impl")
+}

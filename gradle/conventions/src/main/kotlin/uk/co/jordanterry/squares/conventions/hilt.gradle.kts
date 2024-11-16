@@ -19,10 +19,7 @@ dependencies {
 
 extensions.configure<DependencyAnalysisSubExtension> {
     issues {
-        onUsedTransitiveDependencies {
-            exclude(libs.requireLibrary("javax-inject"))
-        }
-        onUnusedDependencies {
+        onAny {
             exclude(libs.requireLibrary("javax-inject"))
             exclude(libs.requireLibrary("dagger"))
             exclude(libs.requireLibrary("dagger-hiltAndroid"))

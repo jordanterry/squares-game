@@ -5,3 +5,11 @@ plugins {
 android {
     namespace 'uk.co.jordanterry.squares.core.components.impl'
 }
+
+dependencies {
+    api project(":core:components:api")
+    
+    api libs.kotlinx.serializationCore
+
+    implementation libs.kotlinx.serializationJson
+}
