@@ -28,3 +28,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Squares"
 include ':app'
+include ':core:components:api'
+include ':core:components:impl'
+include ':core:components:di'

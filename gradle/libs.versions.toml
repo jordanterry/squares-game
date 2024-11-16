@@ -24,7 +24,7 @@ androidx-viewmodelCompose = { module = "androidx.lifecycle:lifecycle-viewmodel-c
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx-navigationCompose" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "dagger" }
 hilt-androidCompiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "dagger" }
-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationComposeVersion" }
+hilt-navigationCompose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationComposeVersion" }
 junit = { module = "junit:junit", version.ref = "junit" }
 androidx-junit = { module = "androidx.test.ext:junit", version.ref = "junitVersion" }
 androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "androidx-espresso" }
@@ -43,10 +43,11 @@ test-kotestRunner = { module = "io.kotest:kotest-runner-junit5", version.ref = "
 test-kotestAssertions = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 
 [plugins]
-foojay-resolver-convention = { id = "org.gradle.toolchains.foojay-resolver-convention", version.ref = "foojay-resolver" }
 android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
 android-testing = { id = "com.android.test", version.ref = "android-gradle-plugin" }
 android-settings = { id = "com.android.settings", version.ref = "android-gradle-plugin" }
+foojay-resolver-convention = { id = "org.gradle.toolchains.foojay-resolver-convention", version.ref = "foojay-resolver" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "kotlin-ksp" }

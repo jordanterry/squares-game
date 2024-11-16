@@ -26,10 +26,9 @@ android {
 
 dependencies {
 
-    implementation(libs.hilt.android)
     implementation libs.androidx.viewmodelCompose
     implementation libs.androidx.navigation.compose
-    implementation libs.hilt.navigation.compose
+    implementation libs.hilt.navigationCompose
     implementation libs.kotlinx.serializationJson
     implementation libs.androidx.core
     implementation libs.androidx.lifecycleRuntime
@@ -39,9 +38,7 @@ dependencies {
     implementation libs.androidx.compose.uiGraphics
     implementation libs.androidx.compose.uiToolingPreview
     implementation libs.androidx.compose.material3
-
-    ksp(libs.hilt.androidCompiler)
-
+    
     testImplementation libs.junit
 
     androidTestImplementation platform(libs.androidx.composeBom)
