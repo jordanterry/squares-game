@@ -1,9 +1,11 @@
-*.iml
-.gradle
-/local.properties
-.DS_Store
-/build
-local.properties
-/.idea/
-# K2 Compiler
-/.kotlin
+# Thanks to https://github.com/TWiStErRob/net.twisterrob.gradle/blob/main/.gitignore
+# Gradle
+.gradle/
+# rootProject, modules|buildSrc, submodules|gradle/plugins, contracts
+/build/
+/*/build/
+/*/*/build/
+/*/*/*/build/
+/gradled.bat
+# Kotlin
+.kotlin/
