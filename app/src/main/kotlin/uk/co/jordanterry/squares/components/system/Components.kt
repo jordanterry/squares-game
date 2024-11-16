@@ -8,7 +8,7 @@ import uk.co.jordanterry.core.components.Component
 
 @Composable
 fun DsText(
-    text: uk.co.jordanterry.core.components.Component.Text.Small,
+    text: Component.Text.Small,
     modifier: Modifier = Modifier,
 ) {
     Text(
@@ -19,7 +19,7 @@ fun DsText(
 
 @Composable
 fun DsText(
-    text: uk.co.jordanterry.core.components.Component.Text.Medium,
+    text: Component.Text.Medium,
     modifier: Modifier = Modifier,
 ) {
     Text(
@@ -30,7 +30,7 @@ fun DsText(
 
 @Composable
 fun DsText(
-    text: uk.co.jordanterry.core.components.Component.Text.Large,
+    text: Component.Text.Large,
     modifier: Modifier = Modifier,
 ) {
     Text(
@@ -41,7 +41,7 @@ fun DsText(
 
 @Composable
 fun DsButton(
-    button: uk.co.jordanterry.core.components.Component.Button.Small,
+    button: Component.Button.Small,
     modifier: Modifier = Modifier,
 ) {
     Button(
@@ -52,7 +52,7 @@ fun DsButton(
 
 @Composable
 fun DsButton(
-    button: uk.co.jordanterry.core.components.Component.Button.Medium,
+    button: Component.Button.Medium,
     modifier: Modifier = Modifier,
 ) {
     Button(
@@ -63,7 +63,7 @@ fun DsButton(
 
 @Composable
 fun DsButton(
-    button: uk.co.jordanterry.core.components.Component.Button.Large,
+    button: Component.Button.Large,
     modifier: Modifier = Modifier,
 ) {
     Button(

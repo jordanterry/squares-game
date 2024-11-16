@@ -1,24 +1,26 @@
 package uk.co.jordanterry.core.components.network
 
+import uk.co.jordanterry.core.components.Component
 import uk.co.jordanterry.core.components.ComponentRepository
+import uk.co.jordanterry.core.components.Layout
 import uk.co.jordanterry.core.components.Screen
 import javax.inject.Inject
 
 class StubbedComponentRepository @Inject constructor() : ComponentRepository {
-    override suspend fun get(screen: Screen): uk.co.jordanterry.core.components.Layout =
+    override suspend fun get(screen: Screen): Layout =
         when (screen) {
-            Screen("home") -> uk.co.jordanterry.core.components.Layout.SingleColumnList(
+            Screen("home") -> Layout.SingleColumnList(
                 components = listOf(
-                    uk.co.jordanterry.core.components.Component.Text.Small("Squares"),
-                    uk.co.jordanterry.core.components.Component.Button.Small("Play"),
-                    uk.co.jordanterry.core.components.Component.Button.Small("Settings"),
-                    uk.co.jordanterry.core.components.Component.Button.Small("Go ad free!"),
+                    Component.Text.Small("Squares"),
+                    Component.Button.Small("Play"),
+                    Component.Button.Small("Settings"),
+                    Component.Button.Small("Go ad free!"),
                 )
             )
 
-            else -> uk.co.jordanterry.core.components.Layout.SingleColumnList(
+            else -> Layout.SingleColumnList(
                 components = listOf(
-                    uk.co.jordanterry.core.components.Component.Text.Large("Oh oh! Something has gone wrong."),
+                    Component.Text.Large("Oh oh! Something has gone wrong."),
                 )
             )
         }

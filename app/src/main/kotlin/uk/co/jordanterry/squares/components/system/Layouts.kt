@@ -18,7 +18,7 @@ import uk.co.jordanterry.core.components.Layout
 
 @Composable
 fun SingleColumnListScreen(
-    layout: uk.co.jordanterry.core.components.Layout.SingleColumnList,
+    layout: Layout.SingleColumnList,
     modifier: Modifier = Modifier,
 ) {
     Scaffold(modifier = modifier.fillMaxSize()) { innerPadding ->
@@ -48,31 +48,31 @@ fun SingleColumnListScreen(
 }
 
 @Composable
-fun Component(component: uk.co.jordanterry.core.components.Component) {
+fun Component(component: Component) {
     when (component) {
-        is uk.co.jordanterry.core.components.Component.Button.Large -> DsButton(
+        is Component.Button.Large -> DsButton(
             button = component,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
         )
 
-        is uk.co.jordanterry.core.components.Component.Button.Medium -> DsButton(
+        is Component.Button.Medium -> DsButton(
             button = component,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
         )
 
-        is uk.co.jordanterry.core.components.Component.Button.Small -> DsButton(
+        is Component.Button.Small -> DsButton(
             button = component,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
         )
 
-        is uk.co.jordanterry.core.components.Component.Text.Large -> DsText(text = component)
-        is uk.co.jordanterry.core.components.Component.Text.Medium -> DsText(text = component)
-        is uk.co.jordanterry.core.components.Component.Text.Small -> DsText(text = component)
+        is Component.Text.Large -> DsText(text = component)
+        is Component.Text.Medium -> DsText(text = component)
+        is Component.Text.Small -> DsText(text = component)
     }
 }
