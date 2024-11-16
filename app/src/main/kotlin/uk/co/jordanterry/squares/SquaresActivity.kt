@@ -8,7 +8,6 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.toRoute
 import dagger.hilt.android.AndroidEntryPoint
 import uk.co.jordanterry.core.components.Screen
 import uk.co.jordanterry.squares.components.ComponentScreen
@@ -27,7 +26,7 @@ class SquaresActivity : ComponentActivity() {
                 NavHost(navController = navController, startDestination = Screen("home")) {
                     composable<Screen> { backStackEntry ->
                         val componentViewModel: ComponentViewModel = hiltViewModel()
-                        ComponentScreen(backStackEntry.toRoute<Screen>(), componentViewModel)
+                        ComponentScreen(componentViewModel)
                     }
                 }
             }

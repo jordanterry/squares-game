@@ -29,6 +29,7 @@ class ComponentViewModel @Inject constructor(
                 Component.Text.Small("Loading..."),
             )
         )
+    
     private val _layout: Flow<Layout> = flow {
         emit(componentRepository.get(screen))
     }

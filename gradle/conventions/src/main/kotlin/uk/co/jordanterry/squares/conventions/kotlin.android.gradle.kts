@@ -1,5 +1,6 @@
 package uk.co.jordanterry.squares.conventions
 
+import org.jetbrains.kotlin.gradle.dsl.ExplicitApiMode
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
@@ -9,6 +10,7 @@ plugins {
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
     compilerOptions {
+        explicitApiMode.set(ExplicitApiMode.Strict)
         jvmTarget.set(JvmTarget.fromTarget("17"))
         allWarningsAsErrors.set(true)
     }

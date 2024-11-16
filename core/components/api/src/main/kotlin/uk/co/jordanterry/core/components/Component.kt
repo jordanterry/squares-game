@@ -30,10 +30,3 @@ sealed interface Component {
         ) : Button
     }
 }
-
-
-sealed interface Layout {
-    data class SingleColumnList(
-        val components: List<Component>,
-    ) : Layout
-}

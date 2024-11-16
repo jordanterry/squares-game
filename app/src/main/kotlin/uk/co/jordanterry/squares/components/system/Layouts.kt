@@ -15,7 +15,6 @@ import androidx.compose.ui.unit.dp
 import uk.co.jordanterry.core.components.Component
 import uk.co.jordanterry.core.components.Layout
 
-
 @Composable
 fun SingleColumnListScreen(
     layout: Layout.SingleColumnList,
