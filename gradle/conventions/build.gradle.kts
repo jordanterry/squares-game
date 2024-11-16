@@ -17,6 +17,7 @@ dependencies {
     implementation(libs.plugins.build.health.asDependency())
     implementation(libs.plugins.dagger.hilt.asDependency())
     implementation(libs.plugins.square.dependencySorter.asDependency())
+    implementation(libs.plugins.pemistahl.versionCatalogLinter.asDependency())
 }
 
 fun Provider<PluginDependency>.asDependency(): Provider<String> =

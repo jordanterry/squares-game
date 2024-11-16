@@ -4,4 +4,5 @@ plugins {
     id("uk.co.jordanterry.squares.conventions.sort.dependencies")
     id("uk.co.jordanterry.squares.conventions.hilt")
     id("uk.co.jordanterry.squares.conventions.testing")
+    id("uk.co.jordanterry.squares.conventions.android.testing")
 }
