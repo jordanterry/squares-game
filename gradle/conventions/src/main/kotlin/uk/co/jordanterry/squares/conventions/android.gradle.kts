@@ -18,13 +18,13 @@ plugins {
 android {
     namespace = "uk.co.jordanterry.squares${project.packageName}"
     compileOptions {
-        sourceCompatibility = JavaVersion.toVersion("21")
-        targetCompatibility = JavaVersion.toVersion("21")
+        sourceCompatibility = JavaVersion.toVersion("17")
+        targetCompatibility = JavaVersion.toVersion("17")
     }
 }
 
 extensions.configure<KotlinAndroidProjectExtension> {
-    jvmToolchain(21)
+    jvmToolchain(17)
     explicitApi()
     compilerOptions {
         allWarningsAsErrors.set(true)
