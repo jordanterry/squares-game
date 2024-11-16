@@ -1,1 +1,0 @@
-uk.co.jordanterry.squares.core.components.di

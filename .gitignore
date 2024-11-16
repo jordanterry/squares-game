@@ -2,10 +2,6 @@
 # Gradle
 .gradle/
 # rootProject, modules|buildSrc, submodules|gradle/plugins, contracts
-/build/
-/*/build/
-/*/*/build/
-/*/*/*/build/
-/gradled.bat
+build
 # Kotlin
 .kotlin/
