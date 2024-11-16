@@ -1,0 +1,7 @@
+plugins {
+    id("uk.co.jordanterry.squares.android.library")
+}
+
+android {
+    namespace 'uk.co.jordanterry.squares.core.components.di'
+}

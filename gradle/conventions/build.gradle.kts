@@ -6,6 +6,7 @@ plugins {
 dependencies {
     implementation(libs.plugins.foojay.resolver.convention.asDependency())
     implementation(libs.plugins.android.application.asDependency())
+    implementation(libs.plugins.android.library.asDependency())
     implementation(libs.plugins.android.testing.asDependency())
     implementation(libs.plugins.android.settings.asDependency())
     implementation(libs.plugins.build.health.asDependency())
@@ -16,6 +17,7 @@ dependencies {
     implementation(libs.plugins.build.health.asDependency())
     implementation(libs.plugins.dagger.hilt.asDependency())
     implementation(libs.plugins.square.dependencySorter.asDependency())
+    implementation(libs.plugins.pemistahl.versionCatalogLinter.asDependency())
 }
 
 fun Provider<PluginDependency>.asDependency(): Provider<String> =
