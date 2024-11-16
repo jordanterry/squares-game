@@ -29,13 +29,8 @@ dependencies {
     implementation libs.androidx.activity
     implementation libs.androidx.activityCompose
     implementation libs.androidx.compose.animation
-    implementation libs.androidx.compose.foundation
-    implementation libs.androidx.compose.material3
     implementation libs.androidx.compose.runtime
     implementation libs.androidx.compose.ui
-    implementation libs.androidx.compose.uiGraphics
-    implementation libs.androidx.compose.uiText
-    implementation libs.androidx.compose.uiUnit
     implementation libs.androidx.fragment
     implementation libs.androidx.lifeCycleViewModel
     implementation libs.androidx.lifeCycleViewModelSavedState
