@@ -16,7 +16,7 @@ dagger = "2.51.1"
 build-health = "2.4.2"
 square-dependencySorter = "0.13"
 foojay-resolver = "0.8.0"
-kotest = "5.9.0"
+kotest = "5.9.1"
 
 [libraries]
 androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
