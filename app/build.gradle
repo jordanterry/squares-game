@@ -25,29 +25,31 @@ android {
 }
 
 dependencies {
-
-    implementation(libs.hilt.android)
-    implementation libs.androidx.viewmodelCompose
-    implementation libs.androidx.navigation.compose
-    implementation libs.hilt.navigation.compose
-    implementation libs.kotlinx.serializationJson
-    implementation libs.androidx.core
-    implementation libs.androidx.lifecycleRuntime
-    implementation libs.androidx.activityCompose
     implementation platform(libs.androidx.composeBom)
+    implementation libs.androidx.activity
+    implementation libs.androidx.activityCompose
+    implementation libs.androidx.compose.animation
+    implementation libs.androidx.compose.foundation
+    implementation libs.androidx.compose.foundationLayout
+    implementation libs.androidx.compose.material3
+    implementation libs.androidx.compose.runtime
     implementation libs.androidx.compose.ui
     implementation libs.androidx.compose.uiGraphics
-    implementation libs.androidx.compose.uiToolingPreview
-    implementation libs.androidx.compose.material3
+    implementation libs.androidx.compose.uiText
+    implementation libs.androidx.compose.uiUnit
+    implementation libs.androidx.fragment
+    implementation libs.androidx.lifeCycleViewModel
+    implementation libs.androidx.lifeCycleViewModelSavedState
+    implementation libs.androidx.navigation.compose
+    implementation libs.androidx.navigationCommon
+    implementation libs.androidx.navigationRuntime
+    implementation libs.androidx.viewmodelCompose
+    implementation libs.hilt.navigationCompose
+    implementation libs.kotlinx.coroutinesCore
+    implementation libs.kotlinx.serializationCore
+    implementation libs.kotlinx.serializationJson
 
-    ksp(libs.hilt.androidCompiler)
-
-    testImplementation libs.junit
-
-    androidTestImplementation platform(libs.androidx.composeBom)
-    androidTestImplementation libs.androidx.junit
-    androidTestImplementation libs.androidx.espresso.core
-    androidTestImplementation libs.androidx.ui.testJunit4
     debugImplementation libs.androidx.compose.uiTooling
-    debugImplementation libs.androidx.compose.uiTestManifest
+
+    debugRuntimeOnly libs.test.androidx.compose.uiTestManifest
 }
