@@ -11,7 +11,7 @@ class ServerSideComponentSerializationTests : DescribeSpec({
     }
 
     describe("button component parsing") {
-
+        
         it("buttonAttributes.type = Large") {
             val subject = """
                 {

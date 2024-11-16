@@ -5,7 +5,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -22,7 +21,6 @@ class SquaresActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SquaresTheme {
-                val screenKey = object : CreationExtras.Key<Screen> {}
                 val navController = rememberNavController()
 
                 NavHost(navController = navController, startDestination = Screen("home")) {
