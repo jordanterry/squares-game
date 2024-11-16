@@ -1,13 +1,13 @@
-package uk.co.jordanterry.squares.components
+package uk.co.jordanterry.components.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import uk.co.jordanterry.components.ui.system.SingleColumnListScreen
 import uk.co.jordanterry.core.components.Layout
-import uk.co.jordanterry.squares.components.system.SingleColumnListScreen
 
 @Composable
-fun ComponentScreen(
+public fun ComponentScreen(
     componentViewModel: ComponentViewModel,
 ) {
     val state by componentViewModel.state.collectAsState()

@@ -1,0 +1,17 @@
+plugins {
+    id("uk.co.jordanterry.squares.ui")
+}
+
+dependencies {
+
+    implementation platform(libs.androidx.composeBom)
+
+    implementation libs.androidx.compose.animation
+    implementation libs.androidx.compose.foundation
+    implementation libs.androidx.compose.material3
+    implementation libs.androidx.compose.runtime
+    implementation libs.androidx.compose.ui
+    implementation libs.androidx.compose.uiGraphics
+    implementation libs.androidx.compose.uiText
+    implementation libs.androidx.compose.uiUnit
+}

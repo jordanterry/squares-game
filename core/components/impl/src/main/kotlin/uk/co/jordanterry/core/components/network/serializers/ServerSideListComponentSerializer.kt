@@ -11,7 +11,7 @@ import kotlinx.serialization.json.JsonDecoder
 import kotlinx.serialization.json.jsonArray
 import uk.co.jordanterry.core.components.network.models.ServerSideComponent
 
-object ServerSideListComponentSerializer : KSerializer<List<ServerSideComponent>> {
+internal object ServerSideListComponentSerializer : KSerializer<List<ServerSideComponent>> {
     private val elementSerializer = ServerSideComponentSerializer
     private val serializer: SerializationStrategy<List<ServerSideComponent>> =
         ListSerializer(elementSerializer)

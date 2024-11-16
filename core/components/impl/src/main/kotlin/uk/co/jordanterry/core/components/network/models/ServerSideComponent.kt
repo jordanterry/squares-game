@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-sealed interface ServerSideComponent {
+internal sealed interface ServerSideComponent {
 
     @Serializable
     data class Button(

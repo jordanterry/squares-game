@@ -1,5 +1,5 @@
 package uk.co.jordanterry.core.components
 
-interface ComponentRepository {
-    suspend fun get(screen: Screen): Layout
+public interface ComponentRepository {
+    public suspend fun get(screen: Screen): Layout
 }

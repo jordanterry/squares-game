@@ -6,7 +6,7 @@ import uk.co.jordanterry.core.components.Layout
 import uk.co.jordanterry.core.components.Screen
 import javax.inject.Inject
 
-class StubbedComponentRepository @Inject constructor() : ComponentRepository {
+public class StubbedComponentRepository @Inject constructor() : ComponentRepository {
     override suspend fun get(screen: Screen): Layout =
         when (screen) {
             Screen("home") -> Layout.SingleColumnList(

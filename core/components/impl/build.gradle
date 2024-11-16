@@ -1,14 +1,10 @@
 plugins {
-    id("uk.co.jordanterry.squares.android.library")
-}
-
-android {
-    namespace 'uk.co.jordanterry.squares.core.components.impl'
+    id("uk.co.jordanterry.squares.kotlin.library")
 }
 
 dependencies {
     api project(":core:components:api")
-    
+
     api libs.kotlinx.serializationCore
 
     implementation libs.kotlinx.serializationJson

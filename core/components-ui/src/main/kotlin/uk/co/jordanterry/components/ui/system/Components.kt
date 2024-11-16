@@ -1,4 +1,4 @@
-package uk.co.jordanterry.squares.components.system
+package uk.co.jordanterry.components.ui.system
 
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
@@ -7,7 +7,7 @@ import androidx.compose.ui.Modifier
 import uk.co.jordanterry.core.components.Component
 
 @Composable
-fun DsText(
+internal fun ComponentText(
     text: Component.Text.Small,
     modifier: Modifier = Modifier,
 ) {
@@ -18,7 +18,7 @@ fun DsText(
 }
 
 @Composable
-fun DsText(
+internal fun ComponentText(
     text: Component.Text.Medium,
     modifier: Modifier = Modifier,
 ) {
@@ -29,7 +29,7 @@ fun DsText(
 }
 
 @Composable
-fun DsText(
+internal fun ComponentText(
     text: Component.Text.Large,
     modifier: Modifier = Modifier,
 ) {
@@ -40,7 +40,7 @@ fun DsText(
 }
 
 @Composable
-fun DsButton(
+internal fun ComponentButton(
     button: Component.Button.Small,
     modifier: Modifier = Modifier,
 ) {
@@ -51,7 +51,7 @@ fun DsButton(
 }
 
 @Composable
-fun DsButton(
+internal fun ComponentButton(
     button: Component.Button.Medium,
     modifier: Modifier = Modifier,
 ) {
@@ -62,7 +62,7 @@ fun DsButton(
 }
 
 @Composable
-fun DsButton(
+internal fun ComponentButton(
     button: Component.Button.Large,
     modifier: Modifier = Modifier,
 ) {

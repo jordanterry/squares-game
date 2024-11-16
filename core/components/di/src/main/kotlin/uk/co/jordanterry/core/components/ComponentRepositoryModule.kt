@@ -3,14 +3,14 @@ package uk.co.jordanterry.core.components
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ViewModelComponent
+import dagger.hilt.components.SingletonComponent
 import uk.co.jordanterry.core.components.network.StubbedComponentRepository
 
 @Module
-@InstallIn(ViewModelComponent::class)
-interface ComponentRepositoryModule {
+@InstallIn(SingletonComponent::class)
+public interface ComponentRepositoryModule {
     @Binds
-    fun bindsComponentRepository(
+    public fun bindsComponentRepository(
         stubbedComponentRepository: StubbedComponentRepository
     ): ComponentRepository
 }

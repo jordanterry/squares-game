@@ -4,6 +4,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 @JvmInline
-value class ScreenKey(
-    val name: String,
+internal value class ScreenKey(
+    internal val name: String,
 )

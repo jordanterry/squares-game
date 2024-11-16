@@ -1,4 +1,4 @@
-package uk.co.jordanterry.squares.components.system
+package uk.co.jordanterry.components.ui.system
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -16,7 +16,7 @@ import uk.co.jordanterry.core.components.Component
 import uk.co.jordanterry.core.components.Layout
 
 @Composable
-fun SingleColumnListScreen(
+internal fun SingleColumnListScreen(
     layout: Layout.SingleColumnList,
     modifier: Modifier = Modifier,
 ) {
@@ -47,31 +47,31 @@ fun SingleColumnListScreen(
 }
 
 @Composable
-fun Component(component: Component) {
+internal fun Component(component: Component) {
     when (component) {
-        is Component.Button.Large -> DsButton(
+        is Component.Button.Large -> ComponentButton(
             button = component,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
         )
 
-        is Component.Button.Medium -> DsButton(
+        is Component.Button.Medium -> ComponentButton(
             button = component,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
         )
 
-        is Component.Button.Small -> DsButton(
+        is Component.Button.Small -> ComponentButton(
             button = component,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
         )
 
-        is Component.Text.Large -> DsText(text = component)
-        is Component.Text.Medium -> DsText(text = component)
-        is Component.Text.Small -> DsText(text = component)
+        is Component.Text.Large -> ComponentText(text = component)
+        is Component.Text.Medium -> ComponentText(text = component)
+        is Component.Text.Small -> ComponentText(text = component)
     }
 }

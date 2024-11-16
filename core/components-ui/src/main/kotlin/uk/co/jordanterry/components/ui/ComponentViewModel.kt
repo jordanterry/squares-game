@@ -1,4 +1,4 @@
-package uk.co.jordanterry.squares.components
+package uk.co.jordanterry.components.ui
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
@@ -17,7 +17,7 @@ import uk.co.jordanterry.core.components.Screen
 import javax.inject.Inject
 
 @HiltViewModel
-class ComponentViewModel @Inject constructor(
+public class ComponentViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     componentRepository: ComponentRepository,
 ) : ViewModel() {
@@ -29,10 +29,10 @@ class ComponentViewModel @Inject constructor(
                 Component.Text.Small("Loading..."),
             )
         )
-    
+
     private val _layout: Flow<Layout> = flow {
         emit(componentRepository.get(screen))
     }
-    val state: StateFlow<Layout> = _layout
+    internal val state: StateFlow<Layout> = _layout
         .stateIn(viewModelScope, SharingStarted.Eagerly, loading)
 }

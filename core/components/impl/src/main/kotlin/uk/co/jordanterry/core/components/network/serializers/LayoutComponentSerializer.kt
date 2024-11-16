@@ -7,7 +7,7 @@ import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 import uk.co.jordanterry.core.components.network.models.LayoutComponent
 
-object LayoutComponentSerializer :
+internal object LayoutComponentSerializer :
     JsonContentPolymorphicSerializer<LayoutComponent>(LayoutComponent::class) {
     override fun selectDeserializer(element: JsonElement) = when {
         "type" in element.jsonObject -> {
