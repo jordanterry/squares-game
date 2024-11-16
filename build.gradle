@@ -1,0 +1,3 @@
+plugins {
+    id("uk.co.jordanterry.squares.root")
+}

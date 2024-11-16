@@ -1,0 +1,33 @@
+pluginManagement {
+    includeBuild("gradle/conventions")
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+
+plugins {
+    id("uk.co.jordanterry.squares.settings")
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Squares"
+include ':app'
+include ':core:components:api'
+include ':core:components:impl'
+include ':core:components:di'
