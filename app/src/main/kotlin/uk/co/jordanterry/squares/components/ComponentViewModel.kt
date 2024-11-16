@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
+import uk.co.jordanterry.core.components.Component
 import uk.co.jordanterry.core.components.ComponentRepository
 import uk.co.jordanterry.core.components.Layout
 import uk.co.jordanterry.core.components.Screen
@@ -25,7 +26,7 @@ class ComponentViewModel @Inject constructor(
     private val loading: Layout =
         Layout.SingleColumnList(
             components = listOf(
-                uk.co.jordanterry.core.components.Component.Text.Small("Loading..."),
+                Component.Text.Small("Loading..."),
             )
         )
     private val _layout: Flow<Layout> = flow {
