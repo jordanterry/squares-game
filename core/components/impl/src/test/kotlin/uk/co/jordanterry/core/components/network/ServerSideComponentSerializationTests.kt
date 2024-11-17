@@ -20,6 +20,9 @@ class ServerSideComponentSerializationTests : DescribeSpec({
                     "buttonAttributes" : {
                         "text" : "Hello",
                         "type" : "Large"
+                    },
+                    "action" : {
+                      "navigateTo" : "Home"
                     }
                 }
             """.trimIndent()
@@ -38,6 +41,9 @@ class ServerSideComponentSerializationTests : DescribeSpec({
                     "buttonAttributes" : {
                         "text" : "Hello",
                         "type" : "Medium"
+                    },
+                    "action" : {
+                      "navigateTo" : "Home"
                     }
                 }
             """.trimIndent()
@@ -57,6 +63,9 @@ class ServerSideComponentSerializationTests : DescribeSpec({
                     "buttonAttributes" : {
                         "text" : "Hello",
                         "type" : "Small"
+                    },
+                    "action" : {
+                      "navigateTo" : "Home"
                     }
                 }
             """.trimIndent()

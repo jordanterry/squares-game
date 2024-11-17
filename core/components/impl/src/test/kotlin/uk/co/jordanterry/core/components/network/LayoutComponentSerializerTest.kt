@@ -83,6 +83,9 @@ class LayoutComponentSerializerTest : DescribeSpec({
                         "buttonAttributes" : {
                             "text" : "Squares",
                             "type" : "Medium"
+                        },
+                        "action" : {
+                          "navigateTo" : "Home"
                         }
                     },
                     {
