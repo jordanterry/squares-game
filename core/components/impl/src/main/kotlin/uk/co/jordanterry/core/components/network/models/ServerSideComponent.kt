@@ -2,6 +2,7 @@ package uk.co.jordanterry.core.components.network.models
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import uk.co.jordanterry.core.components.network.serializers.ActionComponentSerializer
 
 @Serializable
 internal sealed interface ServerSideComponent {
@@ -10,6 +11,7 @@ internal sealed interface ServerSideComponent {
     data class Button(
         @SerialName("buttonAttributes")
         val buttonAttributes: ButtonAttributes,
+        @Serializable(with = ActionComponentSerializer::class) val action: ActionComponent,
     ) : ServerSideComponent {
         @Serializable
         data class ButtonAttributes(

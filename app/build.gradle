@@ -20,28 +20,21 @@ android {
 }
 
 dependencies {
-    implementation platform(libs.androidx.composeBom)
-    implementation project(":core:components:api")
-    implementation project(":core:components:di")
-    implementation project(":core:components:impl")
-    implementation project(":core:components-ui")
-    implementation project(":core:theme")
+    implementation platform(libs.compose.bom)
     implementation libs.androidx.activity
     implementation libs.androidx.activityCompose
-    implementation libs.androidx.compose.animation
-    implementation libs.androidx.compose.runtime
-    implementation libs.androidx.compose.ui
     implementation libs.androidx.fragment
-    implementation libs.androidx.lifeCycleViewModel
-    implementation libs.androidx.lifeCycleViewModelSavedState
-    implementation libs.androidx.navigation.compose
-    implementation libs.androidx.navigationCommon
-    implementation libs.androidx.navigationRuntime
-    implementation libs.androidx.viewmodelCompose
-    implementation libs.hilt.navigationCompose
+    implementation libs.androidx.viewmodel
+    implementation libs.androidx.viewmodelSavedState
+    implementation libs.compose.runtime
     implementation libs.kotlinx.serializationCore
+    implementation projects.core.components.api
+    implementation projects.core.components.di
+    implementation projects.core.components.impl
+    implementation projects.core.componentsUi
+    implementation projects.core.theme
 
-    debugImplementation libs.androidx.compose.uiTooling
+    debugImplementation libs.compose.uiTooling
 
-    debugRuntimeOnly libs.test.androidx.compose.uiTestManifest
+    debugRuntimeOnly libs.test.compose.uiTestManifest
 }

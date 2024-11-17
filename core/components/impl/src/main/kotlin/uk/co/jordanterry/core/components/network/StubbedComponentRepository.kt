@@ -1,5 +1,6 @@
 package uk.co.jordanterry.core.components.network
 
+import uk.co.jordanterry.core.components.Action
 import uk.co.jordanterry.core.components.Component
 import uk.co.jordanterry.core.components.ComponentRepository
 import uk.co.jordanterry.core.components.Layout
@@ -12,9 +13,22 @@ public class StubbedComponentRepository @Inject constructor() : ComponentReposit
             Screen("home") -> Layout.SingleColumnList(
                 components = listOf(
                     Component.Text.Small("Squares"),
-                    Component.Button.Small("Play"),
-                    Component.Button.Small("Settings"),
-                    Component.Button.Small("Go ad free!"),
+                    Component.Button.Small("Play", Action.NavigateTo(Screen("game"))),
+                    Component.Button.Small("Settings", Action.NavigateTo(Screen("settings"))),
+                    Component.Button.Small("Go ad free!", Action.NavigateTo(Screen("go_ad_free"))),
+                )
+            )
+
+            Screen("settings") -> Layout.SingleColumnList(
+                components = listOf(
+                    Component.Text.Small("Settings"),
+                    Component.Button.Small("Go ad free!", Action.NavigateTo(Screen("go_ad_free"))),
+                )
+            )
+
+            Screen("go_ad_free") -> Layout.SingleColumnList(
+                components = listOf(
+                    Component.Text.Small("Go ad free!"),
                 )
             )
 

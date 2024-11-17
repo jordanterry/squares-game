@@ -12,12 +12,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import uk.co.jordanterry.core.components.Component
 import uk.co.jordanterry.core.components.Layout
 
 @Composable
 internal fun SingleColumnListScreen(
     layout: Layout.SingleColumnList,
+    navController: NavController,
     modifier: Modifier = Modifier,
 ) {
     Scaffold(modifier = modifier.fillMaxSize()) { innerPadding ->
@@ -38,7 +40,7 @@ internal fun SingleColumnListScreen(
                             .fillMaxWidth()
                             .align(Alignment.CenterHorizontally)
                     ) {
-                        Component(component)
+                        Component(component, navController)
                     }
                 }
             }
@@ -47,10 +49,14 @@ internal fun SingleColumnListScreen(
 }
 
 @Composable
-internal fun Component(component: Component) {
+internal fun Component(
+    component: Component,
+    navController: NavController,
+) {
     when (component) {
         is Component.Button.Large -> ComponentButton(
             button = component,
+            navController = navController,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
@@ -58,6 +64,7 @@ internal fun Component(component: Component) {
 
         is Component.Button.Medium -> ComponentButton(
             button = component,
+            navController = navController,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
@@ -65,6 +72,7 @@ internal fun Component(component: Component) {
 
         is Component.Button.Small -> ComponentButton(
             button = component,
+            navController = navController,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
