@@ -7,7 +7,7 @@ import uk.co.jordanterry.squares.conventions.dsl.requireLibrary
 dependencies {
     "androidTestImplementation"(libs.requireLibrary("test-junit"))
     "androidTestImplementation"(libs.requireLibrary("test-androidx-testMonitor"))
-    "androidTestImplementation"(platform(libs.requireLibrary("androidx-composeBom")))
+    "androidTestImplementation"(platform(libs.requireLibrary("compose-bom")))
     "androidTestImplementation"(libs.requireLibrary("test-androidx-espressoCore"))
     "androidTestImplementation"(libs.requireLibrary("test-androidx-junit"))
     "androidTestImplementation"(libs.requireLibrary("test-androidx-ui-testJunit4"))
