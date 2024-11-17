@@ -8,14 +8,13 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.toRoute
 import dagger.hilt.android.AndroidEntryPoint
-import uk.co.jordanterry.squares.components.ComponentScreen
-import uk.co.jordanterry.squares.components.ComponentViewModel
-import uk.co.jordanterry.squares.ui.theme.SquaresTheme
+import uk.co.jordanterry.components.ui.ComponentScreen
+import uk.co.jordanterry.components.ui.ComponentViewModel
+import uk.co.jordanterry.core.components.Screen
 
 @AndroidEntryPoint
-class SquaresActivity : ComponentActivity() {
+public class SquaresActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,9 +23,10 @@ class SquaresActivity : ComponentActivity() {
                 val navController = rememberNavController()
 
                 NavHost(navController = navController, startDestination = Screen("home")) {
-                    composable<Screen> { backStackEntry ->
-                        val componentViewModel: ComponentViewModel = hiltViewModel()
-                        ComponentScreen(backStackEntry.toRoute<Screen>(), componentViewModel)
+                    composable<Screen> { _ ->
+                        val componentViewModel: ComponentViewModel =
+                            hiltViewModel()
+                        ComponentScreen(componentViewModel)
                     }
                 }
             }

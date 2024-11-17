@@ -3,10 +3,10 @@ android-gradle-plugin = "8.7.2"
 androidx-activity = "1.9.3"
 androidx-core = "1.15.0"
 androidx-espresso = "3.6.1"
-androidx-fragment = "1.5.1"
+androidx-fragment = "1.8.5"
 androidx-lifecycle = "2.8.7"
 androidx-navigationCompose = "2.8.4"
-androidx-testMonitor = "1.7.1"
+androidx-testMonitor = "1.7.2"
 build-health = "2.4.2"
 composeBom = "2024.11.00"
 dagger = "2.51.1"
@@ -50,6 +50,7 @@ androidx-viewmodelCompose = { group = "androidx.lifecycle", name = "lifecycle-vi
 dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
 dagger-hiltAndroid = { group = "com.google.dagger", name = "hilt-android", version.ref = "dagger" }
 dagger-hiltAndroidCompiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "dagger" }
+dagger-hiltCompiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "dagger" }
 dagger-hiltCore = { group = "com.google.dagger", name = "hilt-core", version.ref = "dagger" }
 hilt-navigationCompose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationComposeVersion" }
 javax-inject = { group = "javax.inject", name = "javax.inject", version = "javax-inject" }

@@ -1,8 +1,11 @@
 plugins {
-    id("uk.co.jordanterry.squares.conventions.android.application")
-    id("uk.co.jordanterry.squares.conventions.kotlin.android")
-    id("uk.co.jordanterry.squares.conventions.sort.dependencies")
-    id("uk.co.jordanterry.squares.conventions.hilt")
-    id("uk.co.jordanterry.squares.conventions.testing")
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("uk.co.jordanterry.squares.conventions.android")
+    id("uk.co.jordanterry.squares.conventions.android.compose")
+    id("uk.co.jordanterry.squares.conventions.android.hilt")
     id("uk.co.jordanterry.squares.conventions.android.testing")
+    id("uk.co.jordanterry.squares.conventions.kotlin.serialization")
+    id("uk.co.jordanterry.squares.conventions.kotlin.testing")
+    id("uk.co.jordanterry.squares.conventions.gradle.health")
 }

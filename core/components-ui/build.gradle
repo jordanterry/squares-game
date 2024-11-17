@@ -1,0 +1,22 @@
+plugins {
+    id("uk.co.jordanterry.squares.ui")
+}
+
+dependencies {
+    api project(":core:components:api")
+    api libs.androidx.lifeCycleViewModelSavedState
+
+    implementation platform(libs.androidx.composeBom)
+    implementation libs.androidx.compose.foundation
+    implementation libs.androidx.compose.foundationLayout
+    implementation libs.androidx.compose.material3
+    implementation libs.androidx.compose.runtime
+    implementation libs.androidx.compose.ui
+    implementation libs.androidx.compose.uiGraphics
+    implementation libs.androidx.compose.uiText
+    implementation libs.androidx.compose.uiUnit
+    implementation libs.androidx.lifeCycleViewModel
+    implementation libs.androidx.navigationCommon
+    implementation libs.kotlinx.coroutinesCore
+    implementation libs.kotlinx.serializationCore
+}

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/components-ui/Squares.core.components-ui.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/components-ui/Squares.core.components-ui.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/components/api/Squares.core.components.api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/components/api/Squares.core.components.api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/theme/Squares.core.theme.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/theme/Squares.core.theme.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gradle/conventions/conventions.main.iml" filepath="$PROJECT_DIR$/.idea/modules/gradle/conventions/conventions.main.iml" />
     </modules>
   </component>

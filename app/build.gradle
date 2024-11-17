@@ -3,8 +3,6 @@ plugins {
 }
 
 android {
-    namespace 'uk.co.jordanterry.squares'
-
     defaultConfig {
         applicationId "uk.co.jordanterry.squares"
         targetSdk = 35
@@ -19,24 +17,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    buildFeatures {
-        compose true
-    }
 }
 
 dependencies {
     implementation platform(libs.androidx.composeBom)
+    implementation project(":core:components:api")
+    implementation project(":core:components:di")
+    implementation project(":core:components:impl")
+    implementation project(":core:components-ui")
+    implementation project(":core:theme")
     implementation libs.androidx.activity
     implementation libs.androidx.activityCompose
     implementation libs.androidx.compose.animation
-    implementation libs.androidx.compose.foundation
-    implementation libs.androidx.compose.foundationLayout
-    implementation libs.androidx.compose.material3
     implementation libs.androidx.compose.runtime
     implementation libs.androidx.compose.ui
-    implementation libs.androidx.compose.uiGraphics
-    implementation libs.androidx.compose.uiText
-    implementation libs.androidx.compose.uiUnit
     implementation libs.androidx.fragment
     implementation libs.androidx.lifeCycleViewModel
     implementation libs.androidx.lifeCycleViewModelSavedState
@@ -45,9 +39,7 @@ dependencies {
     implementation libs.androidx.navigationRuntime
     implementation libs.androidx.viewmodelCompose
     implementation libs.hilt.navigationCompose
-    implementation libs.kotlinx.coroutinesCore
     implementation libs.kotlinx.serializationCore
-    implementation libs.kotlinx.serializationJson
 
     debugImplementation libs.androidx.compose.uiTooling
 

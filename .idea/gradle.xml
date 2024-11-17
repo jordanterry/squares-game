@@ -24,9 +24,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/components" />
+            <option value="$PROJECT_DIR$/core/components-ui" />
             <option value="$PROJECT_DIR$/core/components/api" />
             <option value="$PROJECT_DIR$/core/components/di" />
             <option value="$PROJECT_DIR$/core/components/impl" />
+            <option value="$PROJECT_DIR$/core/theme" />
             <option value="$PROJECT_DIR$/gradle/conventions" />
           </set>
         </option>
