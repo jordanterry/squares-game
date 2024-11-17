@@ -3,6 +3,6 @@ plugins {
 }
 
 dependencies {
-    api project(":core:components:api")
-    api project(":core:components:impl")
+    api projects.core.components.api
+    api projects.core.components.impl
 }

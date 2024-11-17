@@ -3,9 +3,8 @@ plugins {
 }
 
 dependencies {
-    api project(":core:components:api")
-
     api libs.kotlinx.serializationCore
+    api projects.core.components.api
 
     implementation libs.kotlinx.serializationJson
 }

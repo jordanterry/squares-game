@@ -21,11 +21,6 @@ android {
 
 dependencies {
     implementation platform(libs.androidx.composeBom)
-    implementation project(":core:components:api")
-    implementation project(":core:components:di")
-    implementation project(":core:components:impl")
-    implementation project(":core:components-ui")
-    implementation project(":core:theme")
     implementation libs.androidx.activity
     implementation libs.androidx.activityCompose
     implementation libs.androidx.compose.runtime
@@ -33,6 +28,11 @@ dependencies {
     implementation libs.androidx.viewmodel
     implementation libs.androidx.viewmodelSavedState
     implementation libs.kotlinx.serializationCore
+    implementation projects.core.components.api
+    implementation projects.core.components.di
+    implementation projects.core.components.impl
+    implementation projects.core.componentsUi
+    implementation projects.core.theme
 
     debugImplementation libs.androidx.compose.uiTooling
 

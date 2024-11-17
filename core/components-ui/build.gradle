@@ -4,10 +4,10 @@ plugins {
 
 dependencies {
     api platform(libs.androidx.composeBom)
-    api project(":core:components:api")
     api libs.androidx.compose.animation
     api libs.androidx.navigationCommon
     api libs.androidx.viewmodelSavedState
+    api projects.core.components.api
 
     implementation libs.androidx.compose.foundation
     implementation libs.androidx.compose.foundationLayout
