@@ -56,7 +56,9 @@ internal fun ComponentButton(
     modifier: Modifier = Modifier,
 ) {
     Button(
-        onClick = {},
+        onClick = {
+            button.action
+        },
         modifier = modifier,
     ) { Text(button.text) }
 }

@@ -3,10 +3,12 @@ plugins {
 }
 
 dependencies {
+    api platform(libs.androidx.composeBom)
     api project(":core:components:api")
-    api libs.androidx.lifeCycleViewModelSavedState
+    api libs.androidx.compose.animation
+    api libs.androidx.navigationCommon
+    api libs.androidx.viewmodelSavedState
 
-    implementation platform(libs.androidx.composeBom)
     implementation libs.androidx.compose.foundation
     implementation libs.androidx.compose.foundationLayout
     implementation libs.androidx.compose.material3
@@ -15,8 +17,11 @@ dependencies {
     implementation libs.androidx.compose.uiGraphics
     implementation libs.androidx.compose.uiText
     implementation libs.androidx.compose.uiUnit
-    implementation libs.androidx.lifeCycleViewModel
-    implementation libs.androidx.navigationCommon
+    implementation libs.androidx.navigationCompose
+    implementation libs.androidx.navigationRuntime
+    implementation libs.androidx.viewmodel
+    implementation libs.androidx.viewmodelCompose
+    implementation libs.dagger.hilt.navigationCompose
     implementation libs.kotlinx.coroutinesCore
     implementation libs.kotlinx.serializationCore
 }
